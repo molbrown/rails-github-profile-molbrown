@@ -1,0 +1,43 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+    font-family: "Segoe UI",Helvetica, Arial, sans-serif;
+    color: #586069;
+}
+
+#main {
+    font-weight: bold;
+    font-size: 2rem;
+    color: black;
+    margin: 12px 0 3px 0;
+    
+}
+
+#title {
+    color: blue;
+    font-size: 1.5rem;
+}
+
+.na {
+    display: inline-block;
+    padding: 0 4px;
+}
+
+.ba {
+    display: inline-block;
+    margin: 0 40px 0 4px;
+    padding: 2px 4px;
+    background-color: rgba(27,31,35,0.08);
+    border-radius: 20px;
+}
+
+#left {
+    float: left;
+    max-width: 30%;
+}
+
+#right {
+    float: right;
+    max-width: 68%;
+}

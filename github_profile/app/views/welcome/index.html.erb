@@ -4,7 +4,7 @@
 
     <div id="main"><%= @molly['name'] %><br></div>
     <%= @molly['login'] %><br>
-    <%= @molly['bio'] %><br>
+    <div class="bio"><%= @molly['bio'] %><br></div>
 
     <%= @molly['location'] %><br>
 </div>
@@ -27,8 +27,9 @@
         <% @repos.each do |repo| %>
             <div id="title"><%= repo['name'] %><br></div>
             <%= repo['description'] %><br>
-            <%= repo['language'] %><br>
-            <relative-time datetime="<%= repo['updated_at'] %>"</relative-time><br>
+            <div class='lang'><%= repo['language'] %><br></div>
+            <div class='lang'>Updated <%= time_ago_in_words(repo['updated_at']) %> ago</div>
+            <div class='clear'></div>
             <hr>
         <% end %>
     </div>

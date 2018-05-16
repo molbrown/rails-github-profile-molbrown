@@ -11,12 +11,27 @@ body {
     font-size: 2rem;
     color: black;
     margin: 12px 0 3px 0;
-    
+
+}
+
+img {
+    border-radius: 8px;
+}
+
+.bio {
+    margin: 40px 0;
 }
 
 #title {
     color: blue;
     font-size: 1.5rem;
+    margin: 12px 0;
+}
+
+.lang {
+    margin: 10px 0;
+    width: 160px;
+    float: left;
 }
 
 .na {
@@ -40,4 +55,8 @@ body {
 #right {
     float: right;
     max-width: 68%;
+}
+
+.clear {
+    clear: both;
 }

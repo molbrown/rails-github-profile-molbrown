@@ -1,6 +1,6 @@
 class WelcomeController < ApplicationController
   def index
     @molly = HTTParty.get "https://api.github.com/users/molbrown"
-    @repos = HTTParty.get "https://api.github.com/users/molbrown/repos"
+    @repos = HTTParty.get "https://api.github.com/users/molbrown/repos?sort=updated"
   end
 end

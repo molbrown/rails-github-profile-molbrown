@@ -1,0 +1,36 @@
+<h1>GitHub</h1>
+<div id="left">
+    <%= image_tag(@molly['avatar_url'], size: "250") %><br>
+
+    <div id="main"><%= @molly['name'] %><br></div>
+    <%= @molly['login'] %><br>
+    <div class="bio"><%= @molly['bio'] %><br></div>
+
+    <%= @molly['location'] %><br>
+</div>
+
+<div id="right">
+    <nav>
+        <div class="na">Overview</div>
+        <div class="na">Repositories</div>
+        <div class="ba"><%= @molly['public_repos'] %></div>
+        <div class="na">Stars</div>
+        <div class="ba"><%= @molly['public_gists'] %></div>
+        <div class="na">Followers</div>
+        <div class="ba"><%= @molly['followers'] %></div>
+        <div class="na">Following</div>
+        <div class="ba"><%= @molly['following'] %></div>
+        <hr>
+    </nav>
+
+    <div id="repos">
+        <% @repos.each do |repo| %>
+            <div id="title"><%= repo['name'] %><br></div>
+            <%= repo['description'] %><br>
+            <div class='lang'><%= repo['language'] %><br></div>
+            <div class='lang'>Updated <%= time_ago_in_words(repo['updated_at']) %> ago</div>
+            <div class='clear'></div>
+            <hr>
+        <% end %>
+    </div>
+</div>
